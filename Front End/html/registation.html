@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MyBlog</title>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="userscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+        float: left;
+        text-align: right;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        position: center; 
+    }
+    .footer {
+   position: fixed;
+   padding: 5px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+}
+#welcome{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: 
+}
+nav a:hover:not(.active) {
+  background-color: #9999FF;
+}
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <a href="#" style="float: left;border-right: none;left: 0px;color: white;font-size: 25px;text-decoration: none;"><b>MyBlog</b></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Sign in</a>
+                <a href="registation.html">Registation</a>
+            </nav>
+        </div>
+    </div>
+    <div>
+<!-- <form style="margin-top: 20px; margin-left: 40px;width: 60% ;background-color:#F5F5F5"> -->
+<fieldset>
+  <legend style="font-size: 25px"><b>Registation</b></legend>
+  <br>
+  <table id="tab">
+         <tr>
+            <td>Name</td>
+            <td><input type="text" id="name"></td>
+            <td><span id="namee"></span></td>
+         </tr>
+         <tr>
+            <td>Email</td>
+            <td><input type="text" id="email"></td>
+            <td><span id="emaile"></span></td>
+         </tr>
+         <tr>
+            <td>User Name</td>
+            <td><input type="text" id="uname"></td>
+            <td><span id="unamee"></span></td>
+         </tr>
+         <tr>
+            <td>Password</td>
+            <td><input type="password" id="password"></td>
+            <td><span id="passe"></span></td>
+         </tr>
+         <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" id="cpassword"></td>
+            <td><span id="cpasse"></span></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td><button id="submitbtn">Submit</button></td>
+            <td></td>
+         </tr>
+    </table>
+  <!-- <b>Name:</b>
+  <input type="text" name="name"><br>
+  <hr>
+  <b>Email:</b>
+  <input type="text" name="email"><br>
+  <hr>
+  <b>User Name:</b>
+  <input type="text" name="uname"><br>
+  <hr>
+  <b>Password:</b>
+  <input type="Password" name="password"><br>
+  <hr>
+  <b>Confirm Password:</b>
+  <input type="Password" name="cpassword"><br>
+  <hr>
+  <fieldset>
+  <legend><b>Gender</b></legend>
+  <input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="others">Others
+  <br>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <legend><b>Date of Birth</b></legend>
+  <input type="Date" name="date">(dd/mm/yyyy)
+  <br> -->
+  <!--</fieldset>-->
+</fieldset>
+<!-- </form> -->
+    </div>   
+    <span id="msg"></span> 
+    <div class="footer">
+        <p> Copyright @ 2020 Mahmud Jahid</p>
+    </div>
+</body>
+</html>

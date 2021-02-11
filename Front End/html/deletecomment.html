@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MyBlog</title>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="deletecommentscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<style>
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+        float: left;
+        text-align: right;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        position: center; 
+    }
+    .footer {
+   position: fixed;
+   padding: 5px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+}
+#welcome{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: 
+}
+nav a:hover:not(.active) {
+  background-color: #9999FF;
+}
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <a href="#" style="float: left;border-right: none;left: 0px;color: white;font-size: 25px;text-decoration: none;"><b>MyBlog</b></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="mypost.html">Posts</a>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </div>
+    <div style="margin-left: 20%;">
+        <h4> comment</h4>
+  <table>
+     <tr>
+      <td>Comment</td>
+     <td><textarea readonly id="body" rows="1" cols="30"></textarea></td> 
+     </tr>
+     <tr>
+      <td>
+
+      </td>
+      <td>Are you sure you want to delete ?</td>
+      <td><button id="yesbtn1">Yes</button></td>
+      <td><button id="nobtn1">No</button></td>
+     </tr>
+  </table>
+    </div>  
+    <hr>
+    <div>
+    <table id="catList" width="60%" style="margin-left: 20%">
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+  
+</table>
+
+    </div>  
+    <hr>   
+    <div class="footer">
+        <p> Copyright @ 2020 Blog</p>
+    </div>
+</body>
+</html>

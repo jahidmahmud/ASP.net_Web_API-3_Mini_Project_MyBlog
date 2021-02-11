@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MyBlog</title>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="userscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+        float: left;
+        text-align: right;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        position: center; 
+    }
+    .footer {
+   position: fixed;
+   padding: 5px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+}
+#welcome{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: 
+}
+nav a:hover:not(.active) {
+  background-color: #9999FF;
+}
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <a href="#" style="float: left;border-right: none;left: 0px;color: white;font-size: 25px;text-decoration: none;"><b>MyBlog</b></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Sign in</a>
+                <a href="registation.html">Registation</a>
+            </nav>
+        </div>
+    </div>
+    <div>
+    <!-- <form style="margin-top: 20px;margin-left: 40px;width: 40%;background-color: #F5F5F5"> -->
+<fieldset>
+  <legend style="font-size: 25px"><b>Login Form</b></legend>
+  <img src="l.png" style="height: 60px;width: 80px">
+  <br>
+  <table>
+  		<tr>
+            <td><b>User Name</b></td>
+            <td><input type="text" id="uname"></td>
+            <td><span id="nameErr"></span></td>
+         </tr>
+         <tr>
+            <td><b>Password</b></td>
+            <td><input type="password" id="pass"></td>
+            <td><span id="passErr"></span></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td><button id="loginsubmit">Submit</button></td>
+            <td></td>
+         </tr>
+  </table>
+</fieldset>
+<!-- </form> -->
+    </div>    
+    <p id="err"></p>
+    <div class="footer">
+        <p> Copyright @ 2020 Mahmud Jahid</p>
+    </div>
+</body>
+</html>
